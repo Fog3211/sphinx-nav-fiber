@@ -13,7 +13,7 @@ type Props = {
 }
 
 export const SourceTypeStep: FC<Props> = ({ onNextStep, allowNextStep, onSelectType, selectedType }) => (
-  <Flex>
+  <Flex data-testid="SourceTypeStep">
     <Flex align="center" direction="row" justify="space-between" mb={20}>
       <Flex align="center" direction="row">
         <StyledText>Select Type</StyledText>

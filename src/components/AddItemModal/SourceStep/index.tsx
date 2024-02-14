@@ -18,7 +18,7 @@ export const SourceStep: FC<Props> = ({ type, onNextStep, onPrevStep, name, sour
   const allowNextStep = type === 'Image' ? name && sourceLink : name
 
   return (
-    <Flex>
+    <Flex data-testid="SourceStep">
       <Flex align="center" direction="row" justify="space-between" mb={18}>
         <Flex align="center" direction="row">
           <StyledText>Enter details</StyledText>

@@ -33,7 +33,7 @@ export const BudgetStep: FC<Props> = ({ onClick, loading }) => {
   }, [endPoint])
 
   return (
-    <Flex>
+    <Flex data-testid="BudgetStep">
       <Flex align="center" direction="row" justify="space-between" mb={20}>
         <Flex align="center" direction="row">
           <StyledText>Approve Cost</StyledText>
