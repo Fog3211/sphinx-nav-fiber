@@ -66,7 +66,7 @@ const Content = forwardRef<HTMLDivElement, ContentProp>(({ onSubmit, subViewOpen
   }, [])
 
   return (
-    <Wrapper ref={ref} id="sidebar-wrapper">
+    <Wrapper ref={ref} data-testid="sidebar-wrapper" id="sidebar-wrapper">
       <TitlePlaceholder />
 
       <SearchWrapper className={clsx({ 'has-shadow': isScrolled })}>
