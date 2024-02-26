@@ -69,7 +69,7 @@ const Content = forwardRef<HTMLDivElement, ContentProp>(({ onSubmit, subViewOpen
     <Wrapper ref={ref} data-testid="sidebar-wrapper" id="sidebar-wrapper">
       <TitlePlaceholder />
 
-      <SearchWrapper className={clsx({ 'has-shadow': isScrolled })}>
+      <SearchWrapper className={clsx({ 'has-shadow': isScrolled })} data-testid="search-wrapper">
         <Search>
           <SearchBar onSubmit={onSubmit} />
           <InputButton
@@ -88,7 +88,7 @@ const Content = forwardRef<HTMLDivElement, ContentProp>(({ onSubmit, subViewOpen
             {!isLoading ? (
               <>{searchTerm ? <ClearIcon /> : <SearchIcon />}</>
             ) : (
-              <ClipLoader color={colors.SECONDARY_BLUE} size="20" />
+              <ClipLoader color={colors.SECONDARY_BLUE} data-testid="SpiningSphere" size="20" />
             )}
           </InputButton>
         </Search>
